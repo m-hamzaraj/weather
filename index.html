@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <div class="date_time"></div>
+    </div>
+    <div class="search_container">
+      <div class="search_bar">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Enter a City Name"
+        />
+        <button class="btn_search">Search</button>
+      </div>
+      <div class="display_info"></div>
+    </div>
+    <section class="hero">
+      <div class="grid-container">
+        <div class="card temp">
+          <div class="icon te"><i class="fas fa-sun"></i><br /></div>
+          <div class="data">
+            <ul>
+              <li>
+                <span class="temp-data"></span>
+              </li>
+              <li>
+                <span class="feel-data"></span>
+              </li>
+              <li>
+                <span class="wind-data"></span>
+              </li>
+              <li>
+                <span class="degree-data"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card cloudy">
+          <div class="icon"><i class="fas fa-cloud"></i><br /></div>
+          <div class="description">
+            <div class="condition">Cloudy</div>
+            <div class="value cloud-data"></div>
+          </div>
+        </div>
+        <div class="card humidity">
+          <div class="icon"><i class="fas fa-tint"></i><br /></div>
+          <div class="description">
+            <div class="condition">Humidity</div>
+            <div class="value humidity-data"></div>
+          </div>
+        </div>
+        <div class="card sunny">
+          <div class="icon"><i class="fas fa-sun"></i><br /></div>
+          <div class="value sunny-data"></div>
+        </div>
+        <div class="card precip">
+          <div class="icon"><i class="fas fa-cloud-rain"></i><br /></div>
+          <div class="description">
+            <div class="condition">Preciption</div>
+            <div class="value precip-data"></div>
+          </div>
+        </div>
+        <div class="card pressure">
+          <div class="icon"><i class="fas fa-tachometer-alt"></i><br /></div>
+          <div class="description">
+            <div class="condition">Pressure</div>
+            <div class="value pressure-data"></div>
+          </div>
+        </div>
+        <div class="card heat_index">
+          <div class="icon"><i class="fas fa-thermometer-half"></i><br /></div>
+          <div class="description">
+            <div class="condition">Heat-Index</div>
+            <div class="value heat-data"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

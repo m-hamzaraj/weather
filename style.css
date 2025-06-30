@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+.header {
+  width: 100%;
+  overflow: hidden;
+  background-color: green;
+  color: white;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav ul li {
+  float: left;
+  list-style: none;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.header .date_time {
+  float: right;
+  margin-right: 10px;
+}
+.search_container {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+.search_container .search_bar {
+  margin: 0 0 0 20px;
+}
+.search_container .search_bar #search {
+  padding: 10px;
+  border: 0.3px solid lightgray;
+}
+.search_container .search_bar .btn_search {
+  padding: 10px;
+  border: 0.3px solid lightgray;
+  cursor: pointer;
+}
+.display_info {
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+.card {
+  height: 150px;
+  background-color: blue;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  font-size: 85px;
+  justify-items: center;
+  color: white;
+  align-items: center;
+}
+.temp {
+  /* display: block; */
+  grid-column: 1/-1;
+  grid-row: 1;
+  width: 100%;
+  background-color: #bdd9b1;
+  position: relative;
+}
+.te {
+  /* display: inline-block; */
+  /* width: 60%; */
+  position: absolute;
+  left: 48%;
+}
+.data {
+  /* display: inline-block; */
+  /* width: 10%; */
+  right: 0;
+  position: absolute;
+  margin-right: 20px;
+}
+.data ul li {
+  list-style: none;
+  padding: 5px;
+}
+.cloudy {
+  grid-column: 1/3;
+  grid-row: 2;
+  background-color: #7aa9b3;
+}
+.humidity {
+  grid-column: 3/5;
+  grid-row: 2;
+  background-color: #2e5187;
+}
+.heat_index {
+  background-color: #406f9d;
+}
+.sunny {
+  background-color: #eebf6d;
+}
+.pressure {
+  background-color: #4f7b94;
+}
+.precip {
+  background-color: #99c8b8;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search_container .search_bar {
+    margin: 10px 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .temp,
+  .cloudy,
+  .humidity,
+  .heat_index,
+  .sunny,
+  .pressure,
+  .precip {
+    grid-column: 1 / -1 !important;
+  }
+  .te {
+    position: absolute;
+    left: 0;
+  }
+  .data {
+    text-align: center;
+    margin: 6px 0;
+  }
+}
