@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
 }
 .header .nav ul li {
-  float: left;
+    float: left;
   list-style: none;
 }
 .header .nav ul li a {
